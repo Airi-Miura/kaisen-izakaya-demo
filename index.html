@@ -14,7 +14,7 @@
   <meta name="theme-color" content="#08233f">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="market-site">
   <a class="skip-link" href="#main">本文へスキップ</a>
 
   <!-- 実店舗向け: 店名、住所、営業時間、電話番号、SNSリンク、予約URLはこのHTML内の該当箇所を変更してください。 -->
@@ -46,21 +46,56 @@
     </div>
   </header>
 
+  <div class="side-rail" aria-hidden="true">
+    <span>朝獲れ</span>
+    <span>浜焼き</span>
+    <span>地酒</span>
+  </div>
+
   <main id="main">
     <section class="hero" id="top" aria-labelledby="heroTitle">
       <div class="hero-pattern" aria-hidden="true">
         <div class="wave wave-one"></div>
         <div class="wave wave-two"></div>
-        <div class="noren"></div>
+        <div class="harbor-lines"></div>
+        <div class="noren">
+          <span>鮮</span>
+          <span>魚</span>
+          <span>酒</span>
+        </div>
+      </div>
+      <div class="catch-ticker" aria-hidden="true">
+        <span>本日入荷</span>
+        <span>真鯛</span>
+        <span>寒鰤</span>
+        <span>牡蠣</span>
+        <span>金目鯛</span>
+        <span>地酒冷えてます</span>
       </div>
       <div class="hero-inner">
-        <p class="eyebrow">港町のうまいもんを、気軽に。</p>
-        <h1 id="heroTitle">海鮮酒場 凪 <span>-NAGI-</span></h1>
-        <p class="hero-lead">朝獲れ鮮魚と、旨い酒。</p>
-        <p class="hero-copy">産地直送の魚を刺身、浜焼き、煮付けで。仕事帰りの一杯から宴会、観光後の夕食まで、肩肘張らずに楽しめる大人の海鮮酒場です。</p>
-        <div class="hero-actions">
-          <button class="button button-primary js-open-modal" type="button">予約する</button>
-          <a class="button button-outline" href="#today">メニューを見る</a>
+        <div class="hero-copy-block">
+          <p class="eyebrow">港町のうまいもんを、気軽に。</p>
+          <h1 id="heroTitle">海鮮酒場 凪 <span>-NAGI-</span></h1>
+          <p class="hero-lead">朝獲れ鮮魚と、旨い酒。</p>
+          <p class="hero-copy">産地直送の魚を刺身、浜焼き、煮付けで。仕事帰りの一杯から宴会、観光後の夕食まで、肩肘張らずに楽しめる大人の海鮮酒場です。</p>
+          <div class="hero-actions">
+            <button class="button button-primary js-open-modal" type="button">予約する</button>
+            <a class="button button-outline" href="#today">メニューを見る</a>
+          </div>
+        </div>
+
+        <div class="hero-poster" aria-label="店舗の特徴">
+          <div class="poster-top">本日、港より直送</div>
+          <div class="poster-main">
+            <strong>鮮魚</strong>
+            <span>刺身・浜焼き・煮付け</span>
+          </div>
+          <div class="poster-grid">
+            <div><strong>17:00</strong><span>開店</span></div>
+            <div><strong>48席</strong><span>宴会可</span></div>
+            <div><strong>地酒</strong><span>季節替り</span></div>
+            <div><strong>駅近</strong><span>徒歩5分</span></div>
+          </div>
         </div>
       </div>
       <aside class="market-board" aria-label="本日の入荷情報">
@@ -75,8 +110,9 @@
         <div>
           <p class="section-kicker">Concept</p>
           <h2 id="conceptTitle">魚の鮮度、酒との相性、居心地のよさ。海鮮居酒屋の魅力をまっすぐに伝える。</h2>
+          <p class="lead-note">落ち着いた高級店ではなく、暖簾をくぐる楽しさがある海鮮酒場。市場の勢いを感じつつ、清潔で大人も入りやすい印象にまとめています。</p>
         </div>
-        <div class="concept-cards">
+        <div class="concept-cards stamp-board">
           <article>
             <span>01</span>
             <h3>鮮魚へのこだわり</h3>
@@ -103,12 +139,12 @@
 
     <section class="section today reveal" id="today" aria-labelledby="todayTitle">
       <div class="section-inner">
-        <div class="section-heading">
+        <div class="section-heading market-heading">
           <p class="section-kicker">Today&apos;s Recommendation</p>
           <h2 id="todayTitle">本日のおすすめ</h2>
           <p>実店舗向け: 仕入れに合わせて、料理名・説明・価格を各カード内で変更してください。</p>
         </div>
-        <div class="menu-grid">
+        <div class="menu-grid fish-market-grid">
           <article class="recommend-card">
             <div class="photo-placeholder photo-one" aria-label="刺身盛り合わせの写真差し替えエリア"></div>
             <div class="wood-tag">入荷</div>
@@ -173,7 +209,7 @@
           <p class="section-kicker">Popular Menu</p>
           <h2 id="popularTitle">人気メニュー</h2>
         </div>
-        <div class="category-list">
+        <div class="category-list plank-menu">
           <article><span>刺身</span><p>盛り合わせ、単品刺し、貝刺しなど。</p></article>
           <article><span>焼き物</span><p>浜焼き、炭火焼き、干物焼き。</p></article>
           <article><span>煮付け</span><p>金目鯛、かさご、季節魚の煮付け。</p></article>
@@ -345,6 +381,12 @@
       </div>
     </section>
   </main>
+
+  <div class="mobile-reserve-bar" aria-label="スマートフォン用予約導線">
+    <a href="tel:0000000000">電話</a>
+    <button class="js-open-modal" type="button">Web予約</button>
+    <a href="#today">おすすめ</a>
+  </div>
 
   <footer class="site-footer">
     <div class="footer-inner">
