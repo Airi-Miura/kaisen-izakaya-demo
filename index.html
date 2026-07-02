@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>海鮮酒場 凪 -NAGI- | 朝獲れ鮮魚と旨い酒</title>
+  <meta name="description" content="海鮮酒場 凪 -NAGI- は、朝獲れ鮮魚、刺身、浜焼き、日本酒を楽しめる架空の海鮮居酒屋デモサイトです。飲食店向けホームページ制作の営業用ポートフォリオとしてご覧ください。">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="海鮮酒場 凪 -NAGI- | 朝獲れ鮮魚と旨い酒">
+  <meta property="og:description" content="深い藍色と港町の空気感で魅せる、海鮮居酒屋向けデモホームページ。メニュー、コース、FAQ、予約導線まで掲載。">
+  <meta property="og:site_name" content="海鮮酒場 凪 -NAGI-">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="theme-color" content="#08233f">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <!-- 実店舗向け: 店名、住所、営業時間、電話番号、SNSリンク、予約URLはこのHTML内の該当箇所を変更してください。 -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="海鮮酒場 凪 トップへ">
+        <span class="brand-mark" aria-hidden="true">凪</span>
+        <span class="brand-text">
+          <span class="brand-name">海鮮酒場 凪</span>
+          <span class="brand-sub">NAGI Seafood Izakaya</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="メニューを開閉" aria-expanded="false" aria-controls="globalNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="global-nav" id="globalNav" aria-label="グローバルナビゲーション">
+        <a href="#concept">こだわり</a>
+        <a href="#today">本日のおすすめ</a>
+        <a href="#popular">人気メニュー</a>
+        <a href="#course">コース</a>
+        <a href="#info">店舗情報</a>
+        <a href="#faq">FAQ</a>
+        <button class="nav-reserve js-open-modal" type="button">予約</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <div class="hero-pattern" aria-hidden="true">
+        <div class="wave wave-one"></div>
+        <div class="wave wave-two"></div>
+        <div class="noren"></div>
+      </div>
+      <div class="hero-inner">
+        <p class="eyebrow">港町のうまいもんを、気軽に。</p>
+        <h1 id="heroTitle">海鮮酒場 凪 <span>-NAGI-</span></h1>
+        <p class="hero-lead">朝獲れ鮮魚と、旨い酒。</p>
+        <p class="hero-copy">産地直送の魚を刺身、浜焼き、煮付けで。仕事帰りの一杯から宴会、観光後の夕食まで、肩肘張らずに楽しめる大人の海鮮酒場です。</p>
+        <div class="hero-actions">
+          <button class="button button-primary js-open-modal" type="button">予約する</button>
+          <a class="button button-outline" href="#today">メニューを見る</a>
+        </div>
+      </div>
+      <aside class="market-board" aria-label="本日の入荷情報">
+        <span>本日の入荷</span>
+        <strong>真鯛・金目鯛・牡蠣・寒鰤</strong>
+        <p>仕入れ状況により内容は変わります。</p>
+      </aside>
+    </section>
+
+    <section class="section concept reveal" id="concept" aria-labelledby="conceptTitle">
+      <div class="section-inner concept-grid">
+        <div>
+          <p class="section-kicker">Concept</p>
+          <h2 id="conceptTitle">魚の鮮度、酒との相性、居心地のよさ。海鮮居酒屋の魅力をまっすぐに伝える。</h2>
+        </div>
+        <div class="concept-cards">
+          <article>
+            <span>01</span>
+            <h3>鮮魚へのこだわり</h3>
+            <p>その日の状態を見て仕入れた魚を、刺身や焼き物に合わせて丁寧に仕立てます。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>産地直送</h3>
+            <p>港町の活気を感じる、旬の魚介を中心にしたメニュー構成を想定しています。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>季節の魚</h3>
+            <p>春夏秋冬でおすすめが変わる楽しさを、店頭の木札のように表現できます。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>日本酒との相性</h3>
+            <p>地酒や季節限定酒とのペアリングで、食事の満足度を高めます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section today reveal" id="today" aria-labelledby="todayTitle">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Today&apos;s Recommendation</p>
+          <h2 id="todayTitle">本日のおすすめ</h2>
+          <p>実店舗向け: 仕入れに合わせて、料理名・説明・価格を各カード内で変更してください。</p>
+        </div>
+        <div class="menu-grid">
+          <article class="recommend-card">
+            <div class="photo-placeholder photo-one" aria-label="刺身盛り合わせの写真差し替えエリア"></div>
+            <div class="wood-tag">入荷</div>
+            <div class="card-body">
+              <h3>刺身盛り合わせ</h3>
+              <p>その日の鮮魚を少しずつ。まず頼みたい凪の看板盛り。</p>
+              <span class="price">¥1,980〜</span>
+            </div>
+          </article>
+          <article class="recommend-card">
+            <div class="photo-placeholder photo-two" aria-label="炙り〆鯖の写真差し替えエリア"></div>
+            <div class="wood-tag">人気</div>
+            <div class="card-body">
+              <h3>炙り〆鯖</h3>
+              <p>香ばしく炙った脂の旨みと、ほどよい酸味が酒を誘います。</p>
+              <span class="price">¥980</span>
+            </div>
+          </article>
+          <article class="recommend-card">
+            <div class="photo-placeholder photo-three" aria-label="浜焼き牡蠣の写真差し替えエリア"></div>
+            <div class="wood-tag">浜焼</div>
+            <div class="card-body">
+              <h3>浜焼き牡蠣</h3>
+              <p>潮の香りを閉じ込めて焼き上げる、熱々の浜焼き。</p>
+              <span class="price">¥780</span>
+            </div>
+          </article>
+          <article class="recommend-card">
+            <div class="photo-placeholder photo-four" aria-label="金目鯛煮付けの写真差し替えエリア"></div>
+            <div class="wood-tag">煮付</div>
+            <div class="card-body">
+              <h3>金目鯛煮付け</h3>
+              <p>甘辛い煮汁をまとわせた、ふっくら上品な一皿。</p>
+              <span class="price">¥2,480</span>
+            </div>
+          </article>
+          <article class="recommend-card">
+            <div class="photo-placeholder photo-five" aria-label="海鮮なめろうの写真差し替えエリア"></div>
+            <div class="wood-tag">酒肴</div>
+            <div class="card-body">
+              <h3>海鮮なめろう</h3>
+              <p>味噌と薬味の香りを効かせた、地酒に合う肴。</p>
+              <span class="price">¥860</span>
+            </div>
+          </article>
+          <article class="recommend-card">
+            <div class="photo-placeholder photo-six" aria-label="旬魚の天ぷらの写真差し替えエリア"></div>
+            <div class="wood-tag">旬魚</div>
+            <div class="card-body">
+              <h3>旬魚の天ぷら</h3>
+              <p>外は軽く、中はふっくら。藻塩で魚の甘みを楽しめます。</p>
+              <span class="price">¥1,180</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section popular reveal" id="popular" aria-labelledby="popularTitle">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Popular Menu</p>
+          <h2 id="popularTitle">人気メニュー</h2>
+        </div>
+        <div class="category-list">
+          <article><span>刺身</span><p>盛り合わせ、単品刺し、貝刺しなど。</p></article>
+          <article><span>焼き物</span><p>浜焼き、炭火焼き、干物焼き。</p></article>
+          <article><span>煮付け</span><p>金目鯛、かさご、季節魚の煮付け。</p></article>
+          <article><span>揚げ物</span><p>旬魚天ぷら、海老しんじょう、蛸唐揚げ。</p></article>
+          <article><span>締めの海鮮丼</span><p>小丼からしっかり飯まで対応。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section drinks reveal" id="drinks" aria-labelledby="drinksTitle">
+      <div class="section-inner drinks-layout">
+        <div>
+          <p class="section-kicker">Sake & Drinks</p>
+          <h2 id="drinksTitle">日本酒・ドリンク</h2>
+          <p>魚の脂、炙りの香ばしさ、煮付けの甘辛さに合わせて、飲み飽きない一杯を。</p>
+        </div>
+        <div class="drink-list">
+          <div><strong>地酒</strong><span>辛口・旨口をバランスよく</span></div>
+          <div><strong>季節限定酒</strong><span>入荷に合わせて店内札で案内</span></div>
+          <div><strong>焼酎</strong><span>芋・麦・米を定番で</span></div>
+          <div><strong>ビール</strong><span>一杯目にうれしい冷えた生</span></div>
+          <div><strong>ノンアルコール</strong><span>家族利用や観光客にも配慮</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section scenes reveal" id="scenes" aria-labelledby="scenesTitle">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Scenes</p>
+          <h2 id="scenesTitle">利用シーン</h2>
+        </div>
+        <div class="scene-grid">
+          <article><h3>仕事帰り</h3><p>軽く一杯からしっかり夕食まで使いやすい席構成。</p></article>
+          <article><h3>宴会</h3><p>飲み放題やコースへの導線で団体予約を取りやすく。</p></article>
+          <article><h3>観光後の食事</h3><p>地元らしい魚料理を探すお客様へ魅力を伝えます。</p></article>
+          <article><h3>家族利用</h3><p>ノンアルや食事メニューを見せて安心感を作ります。</p></article>
+          <article><h3>カウンター一人飲み</h3><p>一人でも入りやすい空気を写真なしでも表現。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section course reveal" id="course" aria-labelledby="courseTitle">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Course</p>
+          <h2 id="courseTitle">コース料理</h2>
+        </div>
+        <div class="course-grid">
+          <article>
+            <p>定番</p>
+            <h3>海鮮満喫コース</h3>
+            <span>¥4,500</span>
+            <ul>
+              <li>刺身盛り合わせ</li>
+              <li>浜焼き</li>
+              <li>旬魚の煮付け</li>
+            </ul>
+          </article>
+          <article>
+            <p>宴会</p>
+            <h3>宴会コース</h3>
+            <span>¥5,500</span>
+            <ul>
+              <li>飲み放題追加可</li>
+              <li>揚げ物と焼き物</li>
+              <li>締めの海鮮飯</li>
+            </ul>
+          </article>
+          <article>
+            <p>大人時間</p>
+            <h3>日本酒ペアリングコース</h3>
+            <span>¥7,000</span>
+            <ul>
+              <li>旬魚の小皿</li>
+              <li>地酒3種</li>
+              <li>炙りと煮付け</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section info reveal" id="info" aria-labelledby="infoTitle">
+      <div class="section-inner info-layout">
+        <div>
+          <p class="section-kicker">Information</p>
+          <h2 id="infoTitle">店舗情報</h2>
+          <p class="note">実在する住所・電話番号ではありません。公開時は正しい店舗情報へ差し替えてください。</p>
+        </div>
+        <dl class="info-list">
+          <div><dt>営業時間</dt><dd>17:00〜24:00（L.O. 23:00）</dd></div>
+          <div><dt>定休日</dt><dd>月曜日</dd></div>
+          <div><dt>住所</dt><dd>架空県港町なぎ通り2-8-15</dd></div>
+          <div><dt>電話番号</dt><dd>000-0000-0000</dd></div>
+          <div><dt>支払い方法</dt><dd>現金、クレジットカード、電子マネー、QR決済</dd></div>
+          <div><dt>席数</dt><dd>48席（カウンター、テーブル、半個室）</dd></div>
+          <div><dt>喫煙情報</dt><dd>店内禁煙、店外に喫煙スペースあり</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section access reveal" id="access" aria-labelledby="accessTitle">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Access</p>
+          <h2 id="accessTitle">アクセス</h2>
+          <p>Google Mapの埋め込みコードを後から配置できる仮エリアです。</p>
+        </div>
+        <!-- 実店舗向け: このmap-placeholderをGoogle Mapのiframeに差し替えてください。 -->
+        <div class="map-placeholder" role="img" aria-label="Google Map埋め込み予定エリア">
+          <span>Google Map Embed Area</span>
+          <p>ここに店舗のGoogle Mapを埋め込めます</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reservation reveal" id="reservation" aria-labelledby="reservationTitle">
+      <div class="reservation-box">
+        <p class="section-kicker">Reservation</p>
+        <h2 id="reservationTitle">席のご予約・お問い合わせ</h2>
+        <div class="reservation-actions">
+          <a class="contact-card" href="tel:0000000000">
+            <span>電話予約</span>
+            <strong>000-0000-0000</strong>
+          </a>
+          <!-- 実店舗向け: Web予約URLはhrefを予約サイトのURLに変更してください。 -->
+          <button class="contact-card js-open-modal" type="button">
+            <span>Web予約</span>
+            <strong>予約サイトへ</strong>
+          </button>
+          <!-- 実店舗向け: Instagramリンクはhrefを実店舗アカウントURLに変更してください。 -->
+          <a class="contact-card" href="#">
+            <span>Instagram</span>
+            <strong>@nagi_seafood</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq reveal" id="faq" aria-labelledby="faqTitle">
+      <div class="section-inner faq-layout">
+        <div>
+          <p class="section-kicker">FAQ</p>
+          <h2 id="faqTitle">よくある質問</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>予約は必要ですか？</summary>
+            <p>予約なしでもご利用いただけますが、週末や宴会シーズンは事前予約がおすすめです。</p>
+          </details>
+          <details>
+            <summary>コースは何名からですか？</summary>
+            <p>コースは2名様から承る想定です。宴会コースは人数に合わせて内容調整できます。</p>
+          </details>
+          <details>
+            <summary>子ども連れでも利用できますか？</summary>
+            <p>家族利用も想定しています。席や料理内容については事前にご相談ください。</p>
+          </details>
+          <details>
+            <summary>貸切はできますか？</summary>
+            <p>人数、曜日、時間帯により相談可能です。問い合わせ導線から案内できます。</p>
+          </details>
+          <details>
+            <summary>アレルギー対応はできますか？</summary>
+            <p>可能な範囲で対応します。予約時に対象食材をお知らせいただく想定です。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>海鮮酒場 凪 -NAGI-</strong>
+        <p>朝獲れ鮮魚と、旨い酒。海鮮居酒屋デモサイト</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">Google Map</a>
+        <a href="#reservation">Reserve</a>
+      </div>
+    </div>
+    <small>&copy; 2026 海鮮酒場 凪 -NAGI-. Demo website.</small>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="ページ上部へ戻る">↑</button>
+
+  <div class="modal" id="reservationModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" aria-label="モーダルを閉じる" data-close-modal>×</button>
+      <p class="section-kicker">Booking</p>
+      <h2 id="modalTitle">予約リンク設定エリア</h2>
+      <p>ここに予約サイトや電話番号を設定できます。</p>
+      <p class="modal-note">例: グルメサイト、Googleフォーム、LINE公式アカウント、電話予約など。</p>
+      <button class="button button-primary" type="button" data-close-modal>閉じる</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
